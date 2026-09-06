@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F2F5F9"/>
+      <stop offset="100%" stop-color="#E5ECF6"/>
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E1E22"/>
+      <stop offset="50%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#0A0A0C"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2BE9B"/>
+      <stop offset="100%" stop-color="#DE9E74"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2D231F"/>
+      <stop offset="100%" stop-color="#181311"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="400" height="400" rx="40" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Chair Accent (Light Greenish/Teal) -->
+  <path d="M 30 250 Q 20 340 35 400 L 120 400 Q 80 320 70 260 Z" fill="#68C496" opacity="0.45"/>
+
+  <!-- Body / Shoulders / Black Suit -->
+  <g id="suit" filter="url(#shadow)">
+    <!-- Main Suit Torso -->
+    <path d="M 40 400 L 48 305 Q 85 240 145 220 L 255 220 Q 315 240 352 305 L 360 400 Z" fill="url(#suitGrad)"/>
+    <!-- Suit Left Lapel -->
+    <path d="M 140 220 L 190 320 L 175 320 L 115 235 Z" fill="#25252A"/>
+    <!-- Suit Right Lapel -->
+    <path d="M 260 220 L 210 320 L 225 320 L 285 235 Z" fill="#25252A"/>
+  </g>
+
+  <!-- White Shirt (Open Collar) -->
+  <g id="shirt">
+    <polygon points="165,220 235,220 225,310 200,328 175,310" fill="#FFFFFF"/>
+    <!-- Shirt Collar Wings -->
+    <polygon points="160,205 130,230 178,245" fill="#FAFAFA" filter="url(#shadow)"/>
+    <polygon points="240,205 270,230 222,245" fill="#FAFAFA" filter="url(#shadow)"/>
+    <!-- Neck / Throat -->
+    <path d="M 172 175 L 172 235 Q 200 248 228 235 L 228 175 Z" fill="url(#skinGrad)"/>
+  </g>
+
+  <!-- Head & Face -->
+  <g id="head" filter="url(#shadow)">
+    <!-- Ears -->
+    <ellipse cx="140" cy="140" rx="14" ry="20" fill="#E2A178"/>
+    <ellipse cx="260" cy="140" rx="14" ry="20" fill="#E2A178"/>
+
+    <!-- Head Oval -->
+    <path d="M 148 135 C 145 60, 255 60, 252 135 C 250 178, 230 205, 200 205 C 170 205, 150 178, 148 135 Z" fill="url(#skinGrad)"/>
+
+    <!-- Dark Hair -->
+    <path d="M 145 125 C 142 65, 170 42, 200 42 C 230 42, 258 65, 255 125 C 250 100, 240 75, 200 75 C 160 75, 150 100, 145 125 Z" fill="url(#hairGrad)"/>
+    <!-- Subtle Sideburns -->
+    <rect x="145" y="115" width="6" height="24" rx="3" fill="url(#hairGrad)"/>
+    <rect x="249" y="115" width="6" height="24" rx="3" fill="url(#hairGrad)"/>
+
+    <!-- Eyebrows -->
+    <path d="M 162 110 Q 178 106 190 112" stroke="#2D231F" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M 238 110 Q 222 106 210 112" stroke="#2D231F" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes (Warm & Smiling) -->
+    <ellipse cx="176" cy="122" rx="6" ry="6" fill="#1C1816"/>
+    <circle cx="178" cy="120" r="2" fill="#FFFFFF"/>
+    <ellipse cx="224" cy="122" rx="6" ry="6" fill="#1C1816"/>
+    <circle cx="226" cy="120" r="2" fill="#FFFFFF"/>
+
+    <!-- Nose -->
+    <path d="M 200 118 L 198 144 Q 200 148 206 145" stroke="#C8855F" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+
+    <!-- Smile (Mouth with teeth) -->
+    <path d="M 178 162 Q 200 184 222 162 Z" fill="#8E3A3A"/>
+    <path d="M 180 162 Q 200 174 220 162 Z" fill="#FFFFFF"/>
+
+    <!-- Goatee and Mustache -->
+    <!-- Mustache -->
+    <path d="M 183 154 Q 192 158 200 155 Q 208 158 217 154" stroke="#2D231F" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <!-- Chin Beard / Goatee -->
+    <path d="M 194 175 Q 200 178 206 175 Q 208 190 200 193 Q 192 190 194 175 Z" fill="#2D231F"/>
+
+    <!-- Round Glasses (Key distinguishing feature of Eng. Yousef) -->
+    <!-- Left Lens Frame -->
+    <circle cx="175" cy="122" r="18" fill="rgba(255,255,255,0.18)" stroke="#4A5568" stroke-width="2.5"/>
+    <circle cx="175" cy="122" r="17" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+    <!-- Right Lens Frame -->
+    <circle cx="225" cy="122" r="18" fill="rgba(255,255,255,0.18)" stroke="#4A5568" stroke-width="2.5"/>
+    <circle cx="225" cy="122" r="17" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+    <!-- Bridge & Temples -->
+    <path d="M 193 120 Q 200 117 207 120" stroke="#4A5568" stroke-width="2.5" fill="none"/>
+    <path d="M 157 120 L 140 125" stroke="#4A5568" stroke-width="2.2" fill="none"/>
+    <path d="M 243 120 L 260 125" stroke="#4A5568" stroke-width="2.2" fill="none"/>
+  </g>
+
+  <!-- Clasped Hands with Ring at bottom -->
+  <g id="hands" filter="url(#shadow)">
+    <!-- Right hand resting over left -->
+    <ellipse cx="200" cy="380" rx="36" ry="18" fill="url(#skinGrad)"/>
+    <ellipse cx="175" cy="380" rx="28" ry="16" fill="url(#skinGrad)"/>
+    <ellipse cx="225" cy="380" rx="28" ry="16" fill="url(#skinGrad)"/>
+    <!-- Ring on finger -->
+    <ellipse cx="206" cy="380" rx="5" ry="7" fill="#C5A059" stroke="#E5C378" stroke-width="1.5"/>
+    <circle cx="206" cy="380" r="2.5" fill="#4A5568"/>
+  </g>
+
+  <!-- iOS Subtle Squircle Outer Border -->
+  <rect x="1.5" y="1.5" width="397" height="397" rx="38.5" fill="none" stroke="rgba(0,122,255,0.2)" stroke-width="3"/>
+</svg>

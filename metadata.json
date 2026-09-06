@@ -1,0 +1,6 @@
+{
+  "name": "My Junior Engineers",
+  "description": "Showcase platform and tribute for outstanding Faculty of Information Technology and Cybersecurity students and their software engineering systems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
